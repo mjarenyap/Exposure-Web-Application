@@ -1,0 +1,39 @@
+/* stylesheet for pseudoclasses */
+
+.submit-button:hover, .plus-button:hover{
+    background-color: #e52756;
+    border-color: #e52756;
+}
+
+.input-field:focus{
+    border-color: #ff3366;
+}
+
+.login-button:hover, .logout-button:hover{
+    color: #ff3366;
+}
+
+.signup-button:hover, .upload-button:hover{
+    color: white;
+    background-color: #ff3366;
+}
+
+.tags-container span:hover, .popular-tag:hover, .view-mode:hover{
+    color: #ff3366;
+}
+
+.photo-wrapper:hover{
+    box-shadow: 0px 0px 20px #ccc;
+}
+
+.profile-nav:hover{
+    background-color: #434343;
+}
+
+#close:hover{
+    opacity: 1;
+}
+
+#popup-container .owner:hover{
+	text-decoration: underline;
+}

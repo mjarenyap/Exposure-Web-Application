@@ -1,0 +1,534 @@
+/*
+red = #ff3366 
+dark red = #e52756
+*/
+
+/** Standardizing the webpage **/
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #555;
+}
+
+body{
+    margin-top: 67px;
+}
+
+a{
+    color: #ff3366;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #555;
+    margin: 0;
+    padding: 0;
+}
+
+section, header{
+    padding: 80px 120px;
+}
+
+header{
+    padding: 80px 140px;
+    background-color: #f4f4f4;
+    background-image: url("../images/065photographer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+nav{
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    padding: 0 120px;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0px 0px 100px #aaa;
+    z-index: 999;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    padding: 10px 5px;
+    color: #555;
+    list-style-type: none;
+    font-weight: 500;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+input{
+    outline: none;
+    margin: 5px 0;
+    margin-right: 3px;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea{
+    border-radius: 3px;
+    resize: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer{
+    background-color: white;
+    border-top: 2px solid #eee;
+    padding: 30px 120px;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+label{
+	font-size: 0.8em;
+}
+
+
+/** Form wrappers **/
+.login-featured, .signup-featured{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: slategrey;
+    width: 460px;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-featured{
+    background-image: url('../images/login-featured.jpg');
+}
+
+.signup-featured{
+    background-image: url('../images/signup-featured.jpg');
+}
+
+.left-panel{
+    padding: 20px 0;
+    margin-left: 460px;
+    box-sizing: border-box;
+}
+
+.form-wrapper{
+    width: 450px;
+}
+
+.form-wrapper form div{
+    margin: 20px 0;
+}
+
+.form-wrapper .headline{
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.form-wrapper .tagline{
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.form-wrapper span{
+    font-size: 0.8em;
+}
+
+.form-wrapper textarea{
+    width: 95%;
+    height: 40px;
+}
+
+.error-message{
+	border-radius: 3px;
+	border: thin solid #ff3366;
+	color: #ff3366;
+	padding: 10px;
+	font-size: 0.8em;
+	margin-bottom: 15px;
+	display: none;
+}
+
+.required{
+	color: #ff3366;
+}
+
+
+/** Inputs **/
+.input-field{
+    border: thin solid #ddd;
+    padding: 15px;
+    color: #333;
+}
+
+.full-width-field{
+    width: 95%;
+}
+
+.submit-button, .signup-button, .upload-button{
+    color: white;
+    background-color: #ff3366;
+    padding: 10px 25px;
+    font-size: 0.8em;
+    border: thin solid #ff3366;
+    cursor: pointer;
+    border-radius: 200px;
+}
+
+.login-button, .logout-button{
+    color: #f4f4f4;
+    background-color: transparent;
+    padding: 10px 25px;
+    font-size: 0.7em;
+    border: none;
+    cursor: pointer;
+    font-family: "brandon grotesque", sans-serif;
+    letter-spacing: 2px;
+}
+
+.signup-button, .upload-button{
+    padding: 10px 25px;
+    font-size: 0.7em;
+    background-color: transparent;
+    color: #ff3366;
+    border-color: #ff3366;
+    font-family: "brandon grotesque", sans-serif;
+    letter-spacing: 2px;
+}
+
+.upload-button{
+    margin: 0 20px;
+    font-size: 0.7em;
+}
+
+.upload-wrapper{
+    margin: 15px 0;
+}
+
+.upload-image{
+    width: 500px;
+    height: 350px;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.upload-details{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.upload-details .input-field{
+    width: 94%;
+    margin-bottom: 30px;
+}
+
+.upload-details h4{
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.upload-details textarea{
+    height: 100px;
+}
+
+.plus-button{
+	padding: 0px 16px;
+	color: white;
+	background-color: #ff3366;
+	border: thin solid #ff3366;
+	font-size: 1.4em;
+	border-radius: 200px;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+.tag-feed, .user-feed{
+    width: 400px;
+}
+
+.tag-feed div, .user-feed div{
+    color: #ff3366;
+    font-size: 0.8em;
+    margin: 5px;
+    border: thin solid #ff3366;
+    border-radius: 200px;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+.popular-tag form{
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+.popular-tag form input{
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	border: none;
+	color: #555;
+}
+
+
+/** Content **/
+.photo-feed, .shared-feed{
+    background-color: #fafafa;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.shared-feed{
+	display: none;
+}
+
+.photo-feed .no-photos{
+    margin: 0 auto;
+    font-size: 2em;
+    color: #ccc;
+    font-weight: bold;
+    padding: 100px 0;
+}
+
+.photo-wrapper{
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px #ccc;
+    background-color: white;
+    width: 255px;
+    cursor: pointer;
+    margin: 11px 10px;
+}
+
+.photo-wrapper .thumbnail-container, .actual-container{
+    height: 200px;
+    border-radius: 3px;
+    background-color: #ccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.owner{
+	font-size: 0.75em;
+    margin-bottom: 10px;
+    color: #ff3366;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.tags-container{
+	margin-top: 15px;
+}
+
+.tags-container span{
+    color: #ccc;
+    margin-right: 5px;
+    font-size: 0.8em;
+    cursor: pointer
+}
+
+.search-container{
+    background-color: white;
+    padding: 10px 120px;
+    border-bottom: 2px solid #eee;
+    align-items: center;
+}
+
+.search-container ul{
+    margin: 0;
+    padding: 0;
+}
+
+.search-container ul li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 11px;
+    display: inline;
+    font-size: 0.9em;
+}
+
+.search-container .popular-tag, .search-container .view-mode{
+    cursor: pointer;
+}
+
+.search-container .view-active{
+    color: #ff3366;
+}
+
+.profile-info-container{
+    border-bottom: thin solid #eee;
+    align-items: center;
+}
+
+.profile-info-container .profile-photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-image: url("../svg/user.svg");
+    background-repeat: no-reapet;
+    background-size: cover;
+}
+
+.profile-info{
+    margin: 0 20px;
+    width: 400px;
+}
+
+.profile-info p{
+    font-size: 0.9em;
+}
+
+.profile-nav{
+    color: white;
+    padding: 20px 15px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-nav .profile-photo{
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    background-image: url("../svg/user.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.upload-feed{
+    background-color: #fafafa;
+}
+
+.search-label{
+    color: #ff3366;
+}
+
+.popup-description, .photo-description{
+	font-size: 0.8em;
+	line-height: 20px;
+	width: 90%;
+}
+
+.photo-description{
+	display: none;
+}
+
+
+/** IDs **/
+#site-logo{
+    width: 150px;
+}
+
+#search-container{
+	margin-right: 31px;
+	width: 30%;
+}
+
+#search-bar{
+    padding: 13px 15px;
+    width: 100%;
+    border: none;
+    background-color: #eee;
+    color: #666;
+    text-indent: 30px;
+    background-image: url("../svg/search.svg");
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 15px; 
+}
+
+#upload-field{
+    padding: 100px;
+    border: 2px dashed #bbb;
+    color: #bbb;
+    text-align: center;
+}
+
+#upload-field p{
+    font-size: 2em;
+    margin: 3px;
+}
+
+#upload-field span{
+    font-size: 1em;
+}
+
+#popup-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow-y: scroll;
+    padding: 70px;
+}
+
+#popup-container #popup-wrapper{
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    padding: 20px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+#popup-container #close{
+    width: 30px;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#popup-container .actual-container{
+	height: 500px;
+}
+
+
+/** Flexboxes **/
+.flex-row-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-row-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-center-align{
+    align-items: center;
+}
+
+.row-start{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row-end{
+    display: flex;
+    justify-content: flex-end;
+}

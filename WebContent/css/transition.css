@@ -1,0 +1,12 @@
+/* Transition stylesheet */
+
+.submit-button, .input-field, .login-button, .signup-button,
+.tags-container span, .photo-wrapper, .popular-tag, .view-mode,
+.profile-nav, .upload-button, .logout-button, #close,
+.plus-button{
+    transition: ease all 0.3s;
+	-webkit-transition: ease all 0.3s;
+	-o-transition: ease all 0.3s;
+	-ms-transition: ease all 0.3s;
+	-moz-transition: ease all 0.3s;
+}

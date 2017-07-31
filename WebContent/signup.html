@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up - Exposure</title>
+        <link rel="stylesheet" href="css/theme.css" type="text/css" />
+        <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+        <link rel="stylesheet" href="css/pseudo.css" type="text/css" />
+        <link rel="stylesheet" href="css/transition.css" type="text/css" />
+        <script src="js/formHandler" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="signup-featured"></div>
+        <div class="left-panel flex-row-around">
+            <div class="form-wrapper">
+            	<div class="error-message">
+            		Oops! It seems you forgot to fill out some required(*) fields.
+            	</div>
+                <div class="headline">Get started absolutely free.</div>
+                <div class="tagline">Share your memories with the world.</div>
+                <br/>
+                <form onsubmit="checkSignup()" action="register" method="post">
+                    <div>
+                        <h5>Full name <span class="required">*</span></h5>
+                        <input type="text" placeholder="ex. Juan de La Cruz" id="fullname" name="fullname" class="full-width-field input-field" />
+                    </div>
+                    <div>
+                        <h5>Username <span class="required">*</span></h5>
+                        <input type="email" placeholder="ex. JoseRizal" id="username" name="username" class="full-width-field input-field" />
+                    </div>
+                    <div>
+                        <h5>Password <span class="required">*</span></h5>
+                        <input type="password" placeholder="Type your password" id="password" name="password" class="full-width-field input-field" />
+                    </div>
+                    <div>
+                        <h5>A short description about you</h5>
+                        <textarea class="input-field" name="description" placeholder="Tell us something about you"></textarea>
+                    </div>
+                    <div class="flex-row-between flex-center-align">
+                        <input type="submit" value="Create my Account" class="submit-button"/>
+                        <span>Already have an account? <a href="login.html">Login here</a>.</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

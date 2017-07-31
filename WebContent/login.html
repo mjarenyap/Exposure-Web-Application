@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login - Login</title>
+        <link rel="stylesheet" href="css/theme.css" type="text/css" />
+        <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+        <link rel="stylesheet" href="css/pseudo.css" type="text/css" />
+        <link rel="stylesheet" href="css/transition.css" type="text/css" />
+        <script src="js/formHandler" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="login-featured"></div>
+        <div class="left-panel flex-row-around">
+            <div class="form-wrapper">
+            	<div class="error-message">
+            		Invalid Username or Password. Please try again.
+            	</div>
+                <div class="headline">Login to EXPOSURE.</div>
+                <div class="tagline">Enter your details below.</div>
+                <br/>
+                <input type="text" style="display:none;" name="targetLoginPage" value="2">
+                <form onsubmit="checkLogin()" action="login" method="post">
+                    <div>
+                        <h5>Username</h5>
+                        <input type="text" placeholder="ex. JoseRizal" name="username" class="full-width-field input-field" />
+                    </div>
+                    <div>
+                        <h5>Password</h5>
+                        <input type="password" placeholder="Type your password" name="password" class="full-width-field input-field" />
+                    </div>
+                    <div>
+                    	<input type="checkbox" name="remember" id="remember" value="1" />
+                    	<label for="remember">Remember me</label>
+                    </div>
+                    <div class="flex-row-between flex-center-align">
+                        <input type="submit" value="Login" class="submit-button"/>
+                        <span>Don't have an account yet? <a href="signup.html">Sign up here</a>.</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
